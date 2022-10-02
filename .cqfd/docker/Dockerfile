@@ -47,5 +47,12 @@ RUN apt-get update \
 RUN locale-gen en_US.UTF-8 \
     && dpkg-reconfigure locales
 
-# For cache NFS bindig 
+RUN pip install --no-cache-dir --upgrade pip \
+  && pip install kas==3.1
+
+# For cache NFS bindig
 RUN git config --system --add safe.directory '*'
+
+# Install yq tool
+RUN wget https://github.com/mikefarah/yq/releases/download/v4.27.5/yq_linux_amd64 -O /usr/bin/yq &&\
+    chmod +x /usr/bin/yq

@@ -1,0 +1,18 @@
+header:
+  version: 12
+  includes:
+    - repo: mapio-manifest
+      file: base.yml
+    - repo: mapio-manifest
+      file: mapio-prod.yml
+
+repos:
+  mapio-manifest:
+    url: "git@github.com:pcurt/mapio-manifest.git"
+    refspec: dev
+    layers: 
+      .: excluded
+
+local_conf_header:
+  debug-tweaks: |
+    EXTRA_IMAGE_FEATURES = "debug-tweaks"
