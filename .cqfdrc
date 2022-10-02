@@ -1,0 +1,8 @@
+[project]
+org='mapio'
+name='bsp'
+user_extra_groups='debian'
+
+[build]
+command='./build.sh --cmd build-img'
+
