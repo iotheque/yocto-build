@@ -3,12 +3,13 @@ readonly LAYERS_DIR=$(readlink -f $(dirname $0)/layers/)
 readonly OE_INIT_BUILD_ENV=$LAYERS_DIR/poky/oe-init-build-env
 readonly PROGNAME=$(basename "$0")
 readonly ARGS="$@"
-export readonly BB_ENV_PASSTHROUGH_ADDITIONS="CCACHE_TOP_DIR DISTRO DL_DIR MACHINE SSTATE_DIR"
+export readonly BB_ENV_PASSTHROUGH_ADDITIONS="CCACHE_TOP_DIR DISTRO DL_DIR MACHINE SSTATE_DIR SECRET_PATH"
 
 # Project specific
 export readonly IMAGE=${IMAGE:=mapio-genimage}
 export readonly MACHINE=${MACHINE:=mapio-cm4-64}
 export readonly DISTRO=${DISTRO:=mapio}
+export readonly SECRET_PATH=${SECRET_PATH:=../../../../../}
 
 # Exit on error
 set -e
