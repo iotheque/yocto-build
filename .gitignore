@@ -3,3 +3,4 @@
 # Yocto artefacts
 build/
 layers/
+mapio-manifest/
