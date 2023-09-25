@@ -5,3 +5,7 @@ user_extra_groups='debian'
 
 [build]
 command='kas build project.yml'
+flavors='bundle'
+
+[bundle]
+command="kas shell project.yml -c 'bitbake mapio-bundle-image'"
