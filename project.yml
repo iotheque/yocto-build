@@ -9,10 +9,6 @@ header:
 repos:
   mapio-manifest:
     url: "git@github.com:pcurt/mapio-manifest.git"
-    refspec: dev
+    refspec: main
     layers: 
       .: excluded
-
-local_conf_header:
-  debug-tweaks: |
-    EXTRA_IMAGE_FEATURES = "debug-tweaks"

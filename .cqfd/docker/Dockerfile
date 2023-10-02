@@ -50,7 +50,7 @@ RUN locale-gen en_US.UTF-8 \
 RUN pip install --no-cache-dir --upgrade pip \
   && pip install kas==3.1
 
-# For cache NFS bindig
+# For cache NFS binding
 RUN git config --system --add safe.directory '*'
 
 # Install yq tool

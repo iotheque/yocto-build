@@ -1,6 +1,10 @@
+## MAPIO builder repository ##
+This repository is used to build the yocto Linux distribution for Mapio.
+The project documentation can be found here: https://mapio-docs.readthedocs.io/en/latest/
+
 ## Pre-requisites ##
 
-This documentation supports Ubuntu 20.04 LTS version.
+This documentation supports Ubuntu 22.04 LTS version.
 However command listed below should work with any recent debian-like Linux
 distribution.
 
@@ -49,7 +53,9 @@ For more information: https://github.com/savoirfairelinux/cqfd
 
 ## Get the project ##
 
-Refer to https://github.com/pcurt/mapio-manifest
+```bash
+  $ git clone git@github.com:pcurt/yocto-build.git
+```
 
 ### Build cqfd docker image ###
 
@@ -79,9 +85,9 @@ To help developing a shell kas with all bitbake environment can be start:
 
 ## Flash project on target ##
 
-The generated image is named 'mapio-genimage-mapio-cm4-64.img'
+The generated image is named 'mapio-image-mapio-cm4-64.wic.bz2'
 It is generated in build directory:
 ```bash
-  build/tmp/deploy/images/mapio-cm4-64/mapio-genimage-mapio-cm4-64.img.bmap
+  build/tmp/deploy/images/mapio-cm4-64/mapio-image-mapio-cm4-64.wic.bz2
 ```
 You can flash the board using a dd command or using graphical tool as Balena Etcher (https://www.balena.io/etcher/)
