@@ -4,7 +4,10 @@ name='bsp'
 
 [build]
 command='kas build project.yml'
-flavors='bundle'
+flavors='bundle bundle-with-kernel'
 
 [bundle]
 command="kas shell project.yml -c 'bitbake mapio-bundle-image'"
+
+[bundle-with-kernel]
+command="kas shell project.yml -c 'bitbake mapio-bundle-image-with-kernel'"
