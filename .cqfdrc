@@ -1,7 +1,6 @@
 [project]
 org='mapio'
 name='bsp'
-user_extra_groups='debian'
 
 [build]
 command='kas build project.yml'
