@@ -8,7 +8,7 @@ header:
 
 repos:
   mapio-manifest:
-    url: "git@github.com:pcurt/mapio-manifest.git"
+    url: "git@github.com:iotheque/mapio-manifest.git"
     refspec: main
     layers: 
       .: excluded

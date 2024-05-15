@@ -54,7 +54,7 @@ For more information: https://github.com/savoirfairelinux/cqfd
 ## Get the project ##
 
 ```bash
-  $ git clone git@github.com:pcurt/yocto-build.git
+  $ git clone git@github.com:iotheque/yocto-build.git
 ```
 
 ### Build cqfd docker image ###
